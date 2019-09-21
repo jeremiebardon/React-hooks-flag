@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import DarkModeIcon from '../../icon/moon.svg';
-import LightModeIcon from '../../icon/sun.svg';
-
 const SwitchContainer = styled.div`
     display: inherit;
     
@@ -60,7 +57,7 @@ const SwitchInput = styled.input`
 const Switch = ({ checked, switchId, onChange }) => {
     return(
         <GlobalContainer>
-            <img src={LightModeIcon} alt="Light mode"/>
+            <i class="fas fa-sun"></i>
             <SwitchContainer>
                 <SwitchInput 
                     checked={checked} 
@@ -70,7 +67,7 @@ const Switch = ({ checked, switchId, onChange }) => {
                 />
                 <SwitchLabel htmlFor={switchId} /> 
             </SwitchContainer>
-            <img src={DarkModeIcon} alt="Dark mode"/>
+            <i class="fas fa-moon"></i>
         </GlobalContainer>
     )
 }
