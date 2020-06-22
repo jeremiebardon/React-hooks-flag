@@ -26,7 +26,6 @@ function CountriesFlag({countriesItems}) {
     const renderCountryItem = (countries) => {
         if(countries.length) {
             return countries.map(country => {
-                console.log(country)
                 return <CountryItem 
                     key={country.numericCode}
                     name={country.name}
